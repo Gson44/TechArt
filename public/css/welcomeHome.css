@@ -4,34 +4,60 @@
 }
 html, body {
     
-    background-color:whitesmoke;
+    background-color:white;
     color: gray;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
     height: 100vh;
     margin: 0;
 }
-
+.container{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    padding-top: 20vh;
+    padding-left: 5vh;
+}
+#art{
+    color: rgb(243, 230, 115);
+    font-size:40px;
+}
 .title{
-    position: absolute;
-    top:20px;
-}
-.navBar {
-    
     position: relative;
+    top:20px;
+    height: 10vh;
+    padding:10px;
+    margin:10px;
 }
+
 .navList {
     border-right: 1px solid grey;
+} 
+li {
     list-style: none;
-    left:20px;
-    position: absolute;
-    top: 30%;
 }
 
 a {
     text-decoration: none;
 }
+a:hover{
+    color:rgb(243, 230, 115);
+}
 .description {
     padding:10px;
-
 }
+.Content{
+  
+  position: relative;
+  bottom:15vh;
+  padding-left: 40px;
+  display:flex;
+  flex-direction: row;
+  
+  
+}
+
+.contentShow{
+    padding-right:70px;
+}
+

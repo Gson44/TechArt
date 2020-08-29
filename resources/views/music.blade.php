@@ -13,8 +13,9 @@
         <!-- Styles --> 
     </head>
     <body>
-        <h1 class='title'>Tech Art</h1>
-
+        
+            <h1 class='title'>Tech<strong id='art'>Art</strong></h1>
+            <div class="container">
         <div class='navbar'>
             <ul class='navList'>
                 <li class='description'>
@@ -26,13 +27,20 @@
                 <li class='description'>
                     <a href="">Drawing</a>
                 </li>
-                @foreach($music as $musics)
-                <li><strong>{{ $musics ->name }}</strong>
-                    <strong>{{ $musics ->video }}</strong>
-                </li>
-                @endforeach
+               
             </ul>
             
         </div>
+        <div class="Content">
+            @foreach($music as $musics)
+            <div class="ContentItem">
+                <h2 class="contentName">{{ $musics ->name }}</h2><br>
+                <iframe class="contentShow" width="250" height="250" src="{{ $musics ->video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+               
+            @endforeach
+        </div>
+        </div>
+        
     </body>
 </html>
