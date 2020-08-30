@@ -32,10 +32,12 @@
             
         </div>
         <div class="Content">
-            @foreach($music as $musics)
+            @foreach($techmodel as $techmodels)
             <div class="ContentItem">
-                <h2 class="contentName">{{ $musics ->name }}</h2><br>
-                <iframe class="contentShow" width="250" height="250" src="{{ $musics ->video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2 class="contentName">{{ $techmodels ->name }}</h2><br>
+              <img src="{{ $techmodels ->image }}" />
+              
+                    
             </div>
                
             @endforeach

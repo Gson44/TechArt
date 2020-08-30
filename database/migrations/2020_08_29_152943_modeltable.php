@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class MusicTable extends Migration
+class Modeltable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class MusicTable extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('music', function (Blueprint $table){
+        Schema::create('tech_models', function(Blueprint $table){
             $table->id();
             $table->string('name');
-            $table->string('video');
+            $table->string('image');
             $table->timestamps();
         });
     }
@@ -29,7 +28,6 @@ class MusicTable extends Migration
      */
     public function down()
     {
-        //
-        Schema::drop('musics');
+        Schema::drop('techmodels');
     }
 }
