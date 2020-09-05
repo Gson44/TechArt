@@ -9,4 +9,4 @@ Tech ART is a site I created to show case my work. As of right now I be showing 
 3. PHP
 4. Laravel
 5. MySQL
-6. APACHE
+6. Apache
