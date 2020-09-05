@@ -25,7 +25,7 @@
                     <a href="{{ url('/techmodel')}}">3D Model</a> 
                 </li>
                 <li class='description'>
-                    <a href="">Drawing</a>
+                    <a href="{{ url('/drawing')}}">Drawing</a>
                 </li>
                
             </ul>

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Upload File</title>
+        <title>3d model form</title>
     </head>
     <body>
         <form action="upload" method="POST", enctype="multipart/form-data">

@@ -25,7 +25,7 @@
                     <a href="{{ url('/techmodel')}}">3D Model</a> 
                 </li>
                 <li class='description'>
-                    <a href="">Drawing</a>
+                    <a href="{{ url('/drawing')}}">Drawing</a>
                 </li>
                
             </ul>
@@ -34,8 +34,8 @@
         <div class="Content">
             @foreach($techmodel as $techmodels)
             <div class="ContentItem">
-                <h2 class="contentName">{{ $techmodels ->name }}</h2><br>
-              <img src="{{ $techmodels ->image }}" />
+                <h2 class="contentName" id="modelName">{{ $techmodels ->name }}</h2><br>
+              <img src="uploads/tech/{{ $techmodels ->image }}" />
               
                     
             </div>

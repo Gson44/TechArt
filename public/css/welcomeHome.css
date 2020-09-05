@@ -47,7 +47,6 @@ a:hover{
     padding:10px;
 }
 .Content{
-  
   position: relative;
   bottom:15vh;
   padding-left: 40px;
@@ -59,8 +58,18 @@ a:hover{
 
 .contentShow{
     padding-right:70px;
+    
 }
 
 img{
     height:200px;
+    width: 200px;
+    padding-right:70px;
+    border-radius: 100%;
+}
+
+#modelName{
+    text-align:center;
+    position: relative;
+    right:35px;
 }

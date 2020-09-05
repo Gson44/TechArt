@@ -18,8 +18,9 @@ class TechModelController extends Controller
         return view('techmodel', ['techmodel' => $techModel]);
     }
     public function save(Request $req){
-
+        $techmodel = new TechModel();
         $name = $req->input('name');
+        $techmodel->name=$name;
         $name = $name . '.';
         echo $name;
         $file = $req->file('image');
@@ -28,19 +29,14 @@ class TechModelController extends Controller
         $image->orientate();
         $imageName = $name . $file->getClientOriginalExtension();
 
-        $destinationPath = 'uploads';
+        $destinationPath = 'uploads/tech';
         $file->move($destinationPath, $imageName);
         // save image
         // $insert['image'] = "$imageName";
         // $insert['name'] = "$name";
         // $check = Image::insertGetId($insert);
-        $techmodel = new TechModel();
-        $techmodel->name=$name;
         $techmodel->image=$imageName;
         $techmodel->save();
-
-
-
     }
     
 }

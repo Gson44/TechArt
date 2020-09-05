@@ -15,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'MusicController@index');
 Route::get('/techmodel', 'TechModelController@index');
+Route::get('/drawing', 'DrawController@index');
+Route::post('/drawingupload', 'DrawController@save');
 Route::post('/upload', 'TechModelController@save');
 Route::view('/form', 'userform');
+Route::view('/drawform', 'drawform');
