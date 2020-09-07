@@ -13,7 +13,6 @@
         <!-- Styles --> 
     </head>
     <body>
-        
             <h1 class='title'>Tech<strong id='art'>Art</strong></h1>
             <div class="container">
         <div class='navbar'>
